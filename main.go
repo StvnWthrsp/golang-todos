@@ -10,11 +10,10 @@ type todo struct {
 	ID        string `json:"id"`
 	Title     string `json:"title"`
 	Owner     string `json:"owner"`
-	OwnerID   string `json:ownerid`
+	OwnerID   string `json:"ownerid"`
 	Completed bool   `json:"completed"`
 }
 
-// albums slice to seed record album data.
 var todos = []todo{
 	{ID: "1", Title: "Grocery Shopping", Owner: "Steven Weatherspoon", OwnerID: "1", Completed: false},
 	{ID: "2", Title: "Programming", Owner: "Steven Weatherspoon", OwnerID: "1", Completed: false},
@@ -34,7 +33,6 @@ func getTodos(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, todos)
 }
 
-// postAlbums adds an album from JSON received in the request body.
 func postTodos(c *gin.Context) {
 	var newTodo todo
 
