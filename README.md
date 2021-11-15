@@ -1,1 +1,2 @@
 # golang-todos
+Backend written in Go and MongoDB database for a todos app. Microsoft Azure authentication is also to be added, so this can become a multi-user ToDo app. I intend for this to become a cleaner, more lightweight version of my NodeJS version at https://github.com/StvnWthrsp/todos-azuread-login
