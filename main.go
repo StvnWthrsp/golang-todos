@@ -23,7 +23,7 @@ type Todo struct {
 	Status  bool               `json:"status,omitempty"`
 }
 
-const uri = "mongodb://root:rootpw@localhost:27017/?authSource=admin"
+const uri = "mongodb://root:rootpw@mongodb:27017/?authSource=admin"
 
 var todoCollection *mongo.Collection
 var validate = validator.New()
